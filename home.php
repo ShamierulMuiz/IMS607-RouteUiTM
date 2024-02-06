@@ -2,9 +2,7 @@
 session_start();
 include('dbcon.php');
 
-// Check if the user is logged in
 if (isset($_SESSION['user_id'])) {
-    // Fetch username from the database
     $user_id = $_SESSION['user_id'];
     $query = mysqli_query($con, "SELECT username FROM users WHERE user_id = '$user_id'");
     $row = mysqli_fetch_array($query);
