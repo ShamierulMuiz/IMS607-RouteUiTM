@@ -215,7 +215,7 @@ input.checkbox {
         }
 
         .registration-success {
-            background-color: #50C878; /* Soft green color */
+            background-color: #50C878; 
             color: #fff;
         }
 
