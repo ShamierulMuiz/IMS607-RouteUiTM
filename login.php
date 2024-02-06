@@ -12,7 +12,7 @@ if (isset($_POST['login'])) {
     if ($row) {
         $_SESSION['user_id'] = $row['user_id'];
         header('location: home.php');
-        exit; // Ensure no further code execution after redirection
+        exit; 
     } else {
         $error_message = 'Invalid Username and Password Combination!!';
     }
