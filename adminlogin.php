@@ -6,7 +6,6 @@ if (isset($_POST['login'])) {
     $admin_username = mysqli_real_escape_string($con, $_POST['admin']);
     $password = mysqli_real_escape_string($con, $_POST['pass']);
     
-    // Use prepared statement to prevent SQL injection
     $query = mysqli_prepare($con, "SELECT admin_id FROM admin WHERE admin_username=? AND password=?");
     mysqli_stmt_bind_param($query, "ss", $admin_username, $password);
     mysqli_stmt_execute($query);
