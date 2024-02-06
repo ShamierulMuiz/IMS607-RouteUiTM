@@ -1,7 +1,6 @@
 <?php
 require_once('dbcon.php');
 
-// Function to fetch messages from the database
 function getMessages() {
     global $con;
     $queryMessages = "SELECT * FROM messages";
@@ -9,7 +8,6 @@ function getMessages() {
     return $resultMessages;
 }
 
-// Function to fetch events from the database
 function getEvents() {
     global $con;
     $queryEvents = "SELECT * FROM events";
@@ -17,7 +15,6 @@ function getEvents() {
     return $resultEvents;
 }
 
-// Function to fetch users from the database
 function getUsers() {
     global $con;
     $queryUsers = "SELECT * FROM users";
