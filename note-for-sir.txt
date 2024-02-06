@@ -1,0 +1,8 @@
+file yang bersambung dgn dbcon:
+("localhost","id21864099_src","Shamierul_862001","id21864099_sparkle")
+
+file:
+connect.php;
+events_connect;
+
+thank you..
